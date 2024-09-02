@@ -78,8 +78,8 @@ const CreatePlaylist = () => {
     };
 
     const endpoint = isCreatingNew
-      ? "http://localhost:5000/api/playlist/create"
-      : "http://localhost:5000/api/playlist/update";
+      ? "/api/playlist/create"
+      : "/api/playlist/update";
     const method = isCreatingNew ? "POST" : "PUT";
 
     try {
